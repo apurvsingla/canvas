@@ -114,7 +114,7 @@ const Board = () => {
       drawLine(data.x0 * w, data.y0 * h, data.x1 * w, data.y1 * h, data.color);
     }
 
-    socketRef.current = io.connect('http://localhost');
+    socketRef.current = io.connect('https://canvas-server-api.herokuapp.com/');
     socketRef.current.on('drawing', onDrawingEvent);
   }, []);
 
