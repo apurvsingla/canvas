@@ -1,0 +1,13 @@
+.button{
+    position: absolute;
+    top: 80%;
+}
+
+button{
+    word-spacing: 0.1em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: darkcyan;
+    border: none;
+    padding: 15px;
+}
