@@ -122,7 +122,7 @@ const Board = () => {
     // var canvas = document.getElementById("canvas");
     // var url = canvas.toDataURL("image/png");
     var link = document.createElement('a');
-    link.download = 'filename.png';
+    link.download = 'filename.jpg';
     link.href = document.getElementById('canvas').toDataURL();
     link.click();
   }
