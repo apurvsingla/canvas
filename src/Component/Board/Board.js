@@ -118,10 +118,19 @@ const Board = () => {
     socketRef.current.on('drawing', onDrawingEvent);
   }, []);
 
+  function download(){
+    // var canvas = document.getElementById("canvas");
+    // var url = canvas.toDataURL("image/png");
+    var link = document.createElement('a');
+    link.download = 'filename.png';
+    link.href = document.getElementById('canvas').toDataURL();
+    link.click();
+  }
+
   // canvas and color elements
   return (
     <div className="Board">
-      <canvas ref={canvasRef} className="whiteboard" />
+      <canvas ref={canvasRef} className="whiteboard" id="canvas" />
 
       <div ref={colorsRef} className="colors">
         <div className="color black" />
@@ -130,6 +139,10 @@ const Board = () => {
         <div className="color blue" />
         <div className="color yellow" />
       </div>
+      <button onClick={() => download()} style={{
+        position: 'absolute',
+        top: '400px'
+      }}>Download Here!</button>
     </div>
   );
 };

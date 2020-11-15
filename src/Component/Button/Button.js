@@ -21,7 +21,7 @@ class Button extends Component {
         {({ onStartCapture }) => (
           <Fragment>
             <button onClick={onStartCapture}>Capture</button>
-            <img src={screenCapture} alt=""/>
+            <img src={screenCapture} alt="screen"/>
           </Fragment>
         )}
       </ScreenCapture>

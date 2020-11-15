@@ -12,6 +12,7 @@
     "react-dom": "^16.13.1",
     "react-screenshots": "0.0.10",
     "react-scripts": "3.4.3",
+    "react-to-pdf": "0.0.13",
     "socket.io-client": "^2.3.0"
   },
   "scripts": {
