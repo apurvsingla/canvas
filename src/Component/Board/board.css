@@ -10,6 +10,11 @@
     right: 0;
     bottom: 0;
     top: 0;
+    background-color: white;
+  }
+
+  .Board{
+    background-color: white;
   }
   
   .colors {
@@ -23,7 +28,7 @@
   }
 
   
-  .color.black { background-color: rgb(250, 190, 190); border-radius: 50%; margin: 5px;}
+  .color.black { background-color: pink; border-radius: 50%; margin: 5px;}
   .color.red { background-color: red; border-radius: 50%; margin: 5px;}
   .color.green { background-color: green; border-radius: 50%; margin: 5px;}
   .color.blue { background-color: blue; border-radius: 50%; margin: 5px;}

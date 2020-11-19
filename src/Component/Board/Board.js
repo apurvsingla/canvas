@@ -21,7 +21,7 @@ const Board = () => {
     console.log(test);
  
     const current = {
-      color: 'black',
+      color: 'pink',
     };
 
     const onColorUpdate = (e) => {
@@ -119,8 +119,6 @@ const Board = () => {
   }, []);
 
   function download(){
-    // var canvas = document.getElementById("canvas");
-    // var url = canvas.toDataURL("image/png");
     var link = document.createElement('a');
     link.download = 'filename.jpg';
     link.href = document.getElementById('canvas').toDataURL();
@@ -130,7 +128,7 @@ const Board = () => {
   // canvas and color elements
   return (
     <div className="Board">
-      <canvas ref={canvasRef} className="whiteboard" id="canvas" />
+      <canvas ref={canvasRef} className="whiteboard" id="canvas"  width="200" height="100"/>
 
       <div ref={colorsRef} className="colors">
         <div className="color black" />
